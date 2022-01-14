@@ -1,0 +1,13 @@
+
+.container_nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    padding-top: 1rem;
+
+    .container_icon {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}

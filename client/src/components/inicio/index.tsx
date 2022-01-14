@@ -6,7 +6,7 @@ import ILang from '../../interface';
 
 const Inicio: React.FC<{ lang: string }> = ({ lang }): JSX.Element => {
     return (
-        <div>
+        <div className='container_inicio'>
             <h2> {info[ lang as keyof ILang ].greeting} </h2>
             <p> {info[ lang as keyof ILang ].presentation} </p>
         </div>
