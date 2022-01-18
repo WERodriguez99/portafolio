@@ -9,10 +9,14 @@ import { data } from '../../interface/nav';
 import './index.scss';
 
 const Nav: React.FC<{ lang: string, setLang: Dispatch<SetStateAction<string>> }> = ({ lang ,setLang }): JSX.Element => {
+
+    window.addEventListener('resize', (event) => {
+        console.log(window.screen.height)
+      }) 
     
     return (
         <div className='container_nav'>
-            {info.map((el, index) => <div key={index} className='container_icon'> < Section icon={el.icon} id={index} text={el.data[ lang as keyof data ]} /> </div>)}
+            {info.map((el, index) => <div key={index} className='container_icon'> < Section icon={el.icon} id={index} text={el.data[ lang as keyof data ]} path={el.path}/> </div>)}
 
             <h3 onClick={ ()=> setLang(lang === "ENG" ? "ESP" : "ENG") } >{lang}</h3>
         </div>

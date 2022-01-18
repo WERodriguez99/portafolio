@@ -1,10 +1,11 @@
 
 import IProyects from "../../interface/proyects";
+import wallet from '../../Images/wallet.png'
 
 const info: IProyects[] = [
     {
         title: "Wall-et",
-        img: "",
+        img: wallet,
         
         tec: {
             front: " React | Redux | Css Modules  ",
@@ -16,7 +17,7 @@ const info: IProyects[] = [
         
     }, {
         title: "MyNotes",
-        img: "",
+        img: wallet,
         
         tec: {
             front: " React | Redux | Sass  ",
@@ -29,7 +30,7 @@ const info: IProyects[] = [
         
     }, {
         title: "Poke-app",
-        img: "",
+        img: wallet,
         tec: {
             front: " React | Redux | Css Modules  ",
             back: " Express | Sequelize | Postgres ",

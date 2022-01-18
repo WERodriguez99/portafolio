@@ -1,0 +1,14 @@
+
+@import '../../sass/mixins.scss';
+
+.container_skills {
+
+    grid-column: 1/3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 30rem;
+    padding: 5rem;
+    @include containers_skills()
+}
