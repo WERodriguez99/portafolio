@@ -1,10 +1,12 @@
 
+@import '../sass/variants.scss';
+
 .home {
     display: grid;
     gap: 10rem;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    background: slategrey;
-
+    background: $color_01;
+    width: 85rem;
     
 }

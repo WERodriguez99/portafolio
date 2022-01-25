@@ -8,7 +8,10 @@ export type data = {
 
 interface INav {
     icon: IconDefinition,
-    path: string,
+    coordinate: {
+        desktop: number,
+        mobile: number,
+    },
     data: data,
 }
 

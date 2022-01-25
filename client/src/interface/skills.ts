@@ -1,6 +1,14 @@
 
 export default interface ISkills {
+    
     title: string,
-    img: string,
     type: string,
+
+    mobile: {
+        img: string
+    },
+
+    desktop: {
+        img: string
+    }
 }

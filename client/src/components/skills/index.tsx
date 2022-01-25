@@ -6,16 +6,21 @@ import info from '../../utils/info/skills';
 
 import './index.scss';
 
+import utils from '../../utils';
+import IMobileDesktop from '../../interface/mobileDesktop';
+
+const screen = utils.width();
+
 const Skills: React.FC = (): JSX.Element => {
     return (
-        <div className='container_skills' id='skills'>
+        <div className='container_skills'>
             
                 <div className='container' id='languaje'>
                     <h2> Languaje </h2> 
                     {info.map( (el, index) => el.type === "languaje" && 
                         
                         <div key={index} className='skill' >
-                            <Element title={el.title} img={el.img} /> 
+                            <Element title={el.title} img={el[ screen as keyof IMobileDesktop ].img} /> 
                         </div>
 
                     )}
@@ -26,7 +31,7 @@ const Skills: React.FC = (): JSX.Element => {
                     {info.map( (el, index) => el.type === "front" && 
                     
                         <div key={index} className='skill' > 
-                            <Element title={el.title} img={el.img} /> 
+                            <Element title={el.title} img={el[ screen as keyof IMobileDesktop ].img} /> 
                         </div>)}
                 </div>
 
@@ -34,7 +39,7 @@ const Skills: React.FC = (): JSX.Element => {
                     <h2> Back </h2>
                     {info.map( (el, index) => el.type === "back" && 
                         <div key={index} className='skill' > 
-                            <Element title={el.title} img={el.img} /> 
+                            <Element title={el.title} img={el[ screen as keyof IMobileDesktop ].img} /> 
                         </div>)}
                 </div>
         </div>

@@ -1,7 +1,6 @@
 
 .IMG_blog {
-        grid-column: 2;
-        grid-row: 3;
+        
 
         img{
             height: 24rem;
@@ -15,5 +14,17 @@
 
         img {
             height: 24rem;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        
+        .IMG_blog {
+            
+            grid-column: 1/3;
+
+            img {
+                height: 55rem;
+            }
         }
     }

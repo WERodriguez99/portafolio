@@ -1,6 +1,7 @@
 
 import IProyects from "../../interface/proyects";
-import wallet from '../../Images/wallet.png'
+import wallet from '../../Images/proyects/wallet.png';
+import MyNotes from '../../Images/proyects/myNote.jpeg';
 
 const info: IProyects[] = [
     {
@@ -17,7 +18,7 @@ const info: IProyects[] = [
         
     }, {
         title: "MyNotes",
-        img: wallet,
+        img: MyNotes,
         
         tec: {
             front: " React | Redux | Sass  ",
@@ -28,7 +29,7 @@ const info: IProyects[] = [
         ESP: " Con MyNotas vas a poder crearte una cuenta en la cual vas a poder crear tus notas, modificar y eliminar las mismas.",
         
         
-    }, {
+    }, /* {
         title: "Poke-app",
         img: wallet,
         tec: {
@@ -40,7 +41,7 @@ const info: IProyects[] = [
         ESP: " Poke-app es una aplicacion diseñada para que los usuarios puedan buscar, con diversas filtros, a pokemones y ver sus datos. En la app tambien es posible crear pokemones. ",
         
 
-    }
+    } */
 ]
 
 export default info;

@@ -7,6 +7,7 @@ import Me from './me';
 import Skills from './skills';
 import Proyects from './proyects';
 import Education from './education';
+import Contact from './contact';
 import Img from './img';
 
 import info from '../utils/info/img';
@@ -15,7 +16,7 @@ import './index.scss';
 
 const Home: React.FC = (): JSX.Element => {
 
-    const [ lang, setLang ] = useState("ENG");
+    const [ lang, setLang ] = useState("ESP");
 
     return (
         <div className='home'>
@@ -27,6 +28,7 @@ const Home: React.FC = (): JSX.Element => {
             <Skills/>
             <Proyects lang={lang}/>
             <Education/>
+            <Contact lang={lang} />
         </div>
     )
 }  

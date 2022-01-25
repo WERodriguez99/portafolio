@@ -1,0 +1,52 @@
+
+@import '../../sass/variants.scss';
+
+.container_education {
+    
+    grid-column: 1/3;
+
+    display: grid;
+    justify-items: center;
+    
+    width: 44rem;
+    padding: .5rem;
+    margin-bottom: 6rem;
+
+    gap: 1rem;
+
+    .education {
+        width: 100%;
+
+        div {
+            display: grid;
+            justify-content: center;
+            gap: 1.5rem;
+            color: $color_03;
+
+            #info_education {
+                color: $color_03;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .container_education {
+        margin: 40rem;
+        width: 100%;
+
+        .education {
+
+            div {
+                font-size: 4rem;
+            }
+
+            #info_education {
+                font-size: 3rem;
+            }
+
+        }
+    }
+}

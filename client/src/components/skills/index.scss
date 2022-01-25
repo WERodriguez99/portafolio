@@ -1,5 +1,6 @@
 
 @import '../../sass/mixins.scss';
+@import '../../sass/variants.scss';
 
 .container_skills {
 
@@ -9,6 +10,36 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 30rem;
-    padding: 5rem;
-    @include containers_skills()
+    @include containers_skills();
+
+    .container {
+        h2 {
+            color: $color_03;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .container_skills {
+
+        width: 75rem;
+        height: 110rem;
+        margin: 20rem 0rem;
+
+        .container {
+
+            h2 {
+                font-size: 4rem;
+            }
+            .skill {
+
+                padding: 1.5rem;
+                
+                #title {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
 }

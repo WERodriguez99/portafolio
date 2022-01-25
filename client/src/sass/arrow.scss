@@ -12,3 +12,10 @@
     //border: .2px solid $color2;
     border-radius: 100%;
 }
+
+@media screen and (max-width: 360px) {
+    
+    #arrow {
+        font-size: 6rem;
+    }
+}
